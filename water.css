@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h2 {
+  position: absolute;
+  color: #fff;
+  transform: translate(-500, -500);
+  font-size: 8em;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(81, 225, 250);
+}
+
+.content h2:last-child {
+  color: rgb(81, 225, 250);
+  animation: Gozal 4s ease-in-out infinite;
+}
+
+@keyframes Gozal {
+  0%,100%{
+    clip-path: polygon(0% 50%, 8% 46%, 19% 43%, 29% 43%, 40% 46%, 51% 50%, 63% 54%, 79% 54%, 93% 50%, 100% 45%, 100% 100%, 0% 100%);
+  }
+  50%{
+    clip-path: polygon(0% 48%, 6% 54%, 14% 57%, 26% 60%, 42% 61%, 60% 57%, 71% 53%, 81% 48%, 94% 44%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
